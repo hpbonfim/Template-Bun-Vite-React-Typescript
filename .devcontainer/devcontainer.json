@@ -1,0 +1,10 @@
+{
+  "name": "latest-bun-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "postCreateCommand": ". ${NVM_DIR}/nvm.sh && nvm install --lts && curl -fsSL https://bun.sh/install | bash && source /home/vscode/.bashrc"
+}
